@@ -1,4 +1,3 @@
-
 import sys
 import os
 
@@ -11,8 +10,8 @@ class Director:
         self.current_guesses_list = [] # ["m", "o", "_", "n", "_", "_", "_", "n" ]
         self.guesses_word = "" # "mozn"
     def get_word(self):
-        from WordManager import WordManager
-        list = ["mountain", "pencil", "astronaut", "mississippi", "miracle", "descent", "genesis", "gasoline", "compass"]
+        from game.WordManager import WordManager
+        list = ["mountain", "pencil", "mississippi", "miracle", "genesis", "gasoline"]
         word_choice = WordManager(list)
         random_word= word_choice.get_word()
         print(random_word)
